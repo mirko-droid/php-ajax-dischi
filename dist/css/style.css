@@ -1,1 +1,65 @@
+/* body */
+body {
+  font-family: "Roboto", sans-serif;
+  color: blanchedalmond;
+}
 
+/* UTILITY CLASS */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-wrap {
+  flex-wrap: wrap;
+}
+
+.just_cont_c {
+  justify-content: center;
+}
+
+.just_cont_sp_bt {
+  justify-content: space-between;
+}
+
+.align_c {
+  align-items: center;
+}
+
+.fl_dir_col {
+  flex-direction: column;
+}
+
+header {
+  max-width: 100vw;
+  background-color: black;
+}
+header img {
+  height: 25px;
+}
+
+main {
+  background-color: #333;
+}
+main .container {
+  padding: 50px 0;
+}
+main .card {
+  width: 150px;
+  background-color: black;
+  padding: 5px;
+  margin-top: 10px;
+}
+main .card .img_card {
+  text-align: center;
+}
+main .card .img_card img {
+  max-height: 100px;
+}
+main .card .description_card {
+  text-align: center;
+}
