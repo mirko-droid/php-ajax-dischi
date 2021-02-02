@@ -45,6 +45,17 @@ header .icon_logo {
 header .icon_logo img {
   height: 100%;
 }
+header .filter .menu_filter {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  background-color: black;
+  margin-top: 0;
+  padding: 10px;
+}
+header .filter .menu_filter li {
+  list-style: none;
+}
 
 main {
   background-color: #333;

@@ -7,4 +7,17 @@ header{
             height: 100%;
         }
     }
+    .filter{
+        .menu_filter{
+            display: block;
+            position: absolute;
+            z-index: 1000;
+            background-color: black;
+            margin-top: 0;
+            padding: 10px;
+            li{
+                list-style: none;
+            }
+        }
+    }
 }
