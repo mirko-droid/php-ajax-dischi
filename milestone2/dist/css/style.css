@@ -2,6 +2,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: blanchedalmond;
+  max-width: 100vw;
 }
 
 /* UTILITY CLASS */
@@ -35,11 +36,14 @@ body {
 }
 
 header {
-  max-width: 100vw;
   background-color: black;
+  padding: 5px 0;
 }
-header img {
+header .icon_logo {
   height: 25px;
+}
+header .icon_logo img {
+  height: 100%;
 }
 
 main {
@@ -48,18 +52,26 @@ main {
 main .container {
   padding: 50px 0;
 }
-main .card {
-  width: 150px;
+main .container .card {
+  width: 120px;
   background-color: black;
-  padding: 5px;
+  padding: 10px;
   margin-top: 10px;
+  border-radius: 2px;
 }
-main .card .img_card {
+main .container .card h5 {
+  margin: 0.5rem 0;
+}
+main .container .card h6 {
+  margin: 0.2rem 0;
+  color: lightgrey;
+}
+main .container .card .img_card {
   text-align: center;
 }
-main .card .img_card img {
+main .container .card .img_card img {
   max-height: 100px;
 }
-main .card .description_card {
+main .container .card .description_card {
   text-align: center;
 }

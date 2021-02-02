@@ -1,7 +1,10 @@
 header{
-    max-width: 100vw;
     background-color: black;
+    padding: 5px 0;
+    .icon_logo{
+        height: 25px;
         img{
-            height: 25px;
+            height: 100%;
         }
+    }
 }

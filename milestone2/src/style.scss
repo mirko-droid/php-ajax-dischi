@@ -1,60 +1,8 @@
-/* body */
-body{
-    font-family: 'Roboto', sans-serif;
-    color: blanchedalmond;
-}
-/* UTILITY CLASS */
-.container{
-    width: 80%;
-    margin: 0 auto;
-}
-.d-flex{
-    display: flex;
-}
-.d-wrap{
-    flex-wrap: wrap
-}
-.just_cont_c{
-    justify-content: center;
-}
-.just_cont_sp_bt{
-    justify-content: space-between;
-}
-
-.align_c{
-    align-items: center;
-}
-.fl_dir_col{
-    flex-direction: column;
-}
-
-
+@import 'partials/_variables.scss';
+@import 'partials/_mixin.scss';
+@import 'partials/_common.scss';
 @import 'partials/_header.scss';
-
-main{
-    background-color: #333;
-    .container{
-        padding: 50px 0;
-    }
-    .card{
-        width: 150px;
-        background-color: black;
-        padding: 5px;
-        margin-top: 10px;
-        .img_card{
-            text-align: center;
-            img{
-                max-height: 100px;
-            }
-        }
-        .description_card{
-            text-align: center;
-    
-        }
-    }
-
-    
-}
+@import 'partials/_main.scss';
 
 
 
