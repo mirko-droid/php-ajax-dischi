@@ -18,6 +18,11 @@ var app = new Vue({
     axios.get('./db.php').then(function (response) {
       _this.phpListMovie = response.data;
     });
+  },
+  methods: {
+    mostraMenu: function mostraMenu() {
+      console.log(this.phpListMovie);
+    }
   }
 });
 

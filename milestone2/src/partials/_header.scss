@@ -3,19 +3,28 @@ header{
     padding: 5px 0;
     .icon_logo{
         height: 25px;
+        padding-right: 10px;
         img{
             height: 100%;
         }
     }
     .filter{
+        color: white;
+        a{
+            list-style: none;
+            color: white;
+            text-decoration: none;
+        }
         .menu_filter{
-            display: block;
+            display: none;
             position: absolute;
             z-index: 1000;
             background-color: black;
             margin-top: 0;
+            margin-left: 20px;
             padding: 10px;
             li{
+                padding: 2px 0;
                 list-style: none;
             }
         }
