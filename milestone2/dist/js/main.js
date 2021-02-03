@@ -21,7 +21,8 @@ var app = new Vue({
   },
   methods: {
     mostraMenu: function mostraMenu() {
-      console.log(this.phpListMovie);
+      var menu = document.querySelector('.menu_filter');
+      menu.style.display = 'block';
     }
   }
 });

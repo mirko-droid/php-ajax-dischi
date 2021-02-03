@@ -1,7 +1,6 @@
 let app = new Vue({
     el: '#root',
     data: {
-
         phpListMovie : [],
     },
     mounted() {
@@ -11,8 +10,9 @@ let app = new Vue({
     },
     methods: {
         mostraMenu () {
-            console.log(this.phpListMovie);
-           
+            let menu = document.querySelector('.menu_filter');
+            menu.style.display = 'block';
+            
         },
         
     },
