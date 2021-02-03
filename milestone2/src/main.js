@@ -11,9 +11,15 @@ let app = new Vue({
     methods: {
         mostraMenu () {
             let menu = document.querySelector('.menu_filter');
-            menu.style.display = 'block';
-            
+            if (menu.style.display === "none") {
+              menu.style.display = "block";
+            } else {
+              menu.style.display = "none";
+            }
         },
+        
+
+     
         
     },
     

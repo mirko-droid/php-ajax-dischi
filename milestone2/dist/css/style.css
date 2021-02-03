@@ -68,6 +68,10 @@ header .filter .menu_filter li {
   padding: 2px 0;
   list-style: none;
 }
+header .filter .menu_filter li:hover a {
+  background-color: white;
+  color: black;
+}
 
 main {
   background-color: #333;

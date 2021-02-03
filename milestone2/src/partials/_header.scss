@@ -26,6 +26,10 @@ header{
             li{
                 padding: 2px 0;
                 list-style: none;
+            &:hover a{
+                background-color: white;
+                color: black;
+            }
             }
         }
     }
