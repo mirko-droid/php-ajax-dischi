@@ -17,6 +17,34 @@ let app = new Vue({
               menu.style.display = "none";
             }
         },
+        filtraRock (){
+            axios.get('./db.php').then((response) =>{
+                this.phpListMovie = response.data.filter((album)=>{
+                    return album.genre == 'Rock';
+                })
+            });
+        },
+        filtraJazz (){
+            axios.get('./db.php').then((response) =>{
+                this.phpListMovie = response.data.filter((album)=>{
+                    return album.genre == 'Jazz';
+                })
+            });
+        },
+        filtraPop (){
+            axios.get('./db.php').then((response) =>{
+                this.phpListMovie = response.data.filter((album)=>{
+                    return album.genre == 'Pop';
+                })
+            });
+        },
+        filtraMetal (){
+            axios.get('./db.php').then((response) =>{
+                this.phpListMovie = response.data.filter((album)=>{
+                    return album.genre == 'Metal';
+                })
+            });
+        },
         
 
      

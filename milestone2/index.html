@@ -16,12 +16,13 @@
                     <img src="./dist/img/logo.png" alt="">
                 </div>
                 <div class="filter"> 
-                    <a href="#" @click="mostraMenu()" > Scegli il genere <i class="fas fa-chevron-down"></i> </a>
+                    <a href="#" @click="mostraMenu()"> Scegli il genere <i class="fas fa-chevron-down"></i> </a>
                     
                     <ul class='menu_filter'>
-                        <li><a href="#">Metal</a></li>
-                        <li><a href="#">Jazz</a></li>
-                        <li><a href="#">Rock</a></li>
+                        <li @click="filtraRock()"><a href="#">Rock</a></li>
+                        <li @click="filtraJazz()"><a href="#">Jazz</a></li>
+                        <li @click="filtraPop()"><a href="#">Pop</a></li>
+                        <li @click="filtraMetal()"><a href="#">Metal</a></li>
                     </ul>
                 </div>
             </nav>

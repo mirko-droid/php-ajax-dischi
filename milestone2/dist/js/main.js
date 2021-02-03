@@ -28,6 +28,42 @@ var app = new Vue({
       } else {
         menu.style.display = "none";
       }
+    },
+    filtraRock: function filtraRock() {
+      var _this2 = this;
+
+      axios.get('./db.php').then(function (response) {
+        _this2.phpListMovie = response.data.filter(function (album) {
+          return album.genre == 'Rock';
+        });
+      });
+    },
+    filtraJazz: function filtraJazz() {
+      var _this3 = this;
+
+      axios.get('./db.php').then(function (response) {
+        _this3.phpListMovie = response.data.filter(function (album) {
+          return album.genre == 'Jazz';
+        });
+      });
+    },
+    filtraPop: function filtraPop() {
+      var _this4 = this;
+
+      axios.get('./db.php').then(function (response) {
+        _this4.phpListMovie = response.data.filter(function (album) {
+          return album.genre == 'Pop';
+        });
+      });
+    },
+    filtraMetal: function filtraMetal() {
+      var _this5 = this;
+
+      axios.get('./db.php').then(function (response) {
+        _this5.phpListMovie = response.data.filter(function (album) {
+          return album.genre == 'Metal';
+        });
+      });
     }
   }
 });
