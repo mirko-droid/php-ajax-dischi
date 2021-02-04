@@ -45,5 +45,10 @@ let app = new Vue({
                 })
             });
         },
+        filtraAll (){
+            axios.get('./db.php').then((response) =>{
+                this.phpListMovie = response.data;
+            });
+        },
     },
 });

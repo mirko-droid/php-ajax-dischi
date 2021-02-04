@@ -23,6 +23,8 @@
                         <li @click="filtraJazz()"><a href="#">Jazz</a></li>
                         <li @click="filtraPop()"><a href="#">Pop</a></li>
                         <li @click="filtraMetal()"><a href="#">Metal</a></li>
+                        <li @click="filtraAll()"><a href="#">All</a></li>
+
                     </ul>
                 </div>
             </nav>

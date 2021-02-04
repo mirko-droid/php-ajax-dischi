@@ -64,6 +64,13 @@ var app = new Vue({
           return album.genre == 'Metal';
         });
       });
+    },
+    filtraAll: function filtraAll() {
+      var _this6 = this;
+
+      axios.get('./db.php').then(function (response) {
+        _this6.phpListMovie = response.data;
+      });
     }
   }
 });
